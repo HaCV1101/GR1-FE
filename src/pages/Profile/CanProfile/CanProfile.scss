@@ -1,0 +1,203 @@
+.header {
+  margin-top: 64px;
+  text-align: center;
+  font-size: 60px;
+  color: transparent;
+  background-image: linear-gradient(to right top, pink, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.profile__page {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  .container-profile {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    flex-direction: row;
+    border: groove 3px;
+    .header-profile {
+      display: flex;
+      flex-direction: column;
+      flex: 3;
+      background-color: #f0fff0;
+      border-right: groove 3px;
+      .avatar {
+        align-self: center;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 4px solid white;
+        margin: 10px;
+      }
+      h1 {
+        background-color: #ffe4e1;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 50px;
+      }
+      .introduce {
+        flex: 1;
+        p {
+          margin: 20px 10px;
+          font-size: 20px;
+          line-height: 40px;
+        }
+      }
+      .contact {
+        flex: 1;
+        ul {
+          margin: 20px 10px;
+        }
+        li {
+          font-size: 20px;
+          list-style-type: none;
+          line-height: 30px;
+          display: flex;
+          align-items: center;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+    }
+    .detail {
+      display: flex;
+      flex-direction: column;
+      flex: 7;
+      background-color: #f0fff0;
+      h1 {
+        background-color: #ffdead;
+        line-height: 50px;
+        border-radius: 20px;
+      }
+      .name {
+        display: flex;
+        height: 200px;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        margin-left: 40px;
+        h2 {
+          color: green;
+          font-size: 50px;
+          margin-bottom: 20px;
+        }
+        p {
+          font-style: italic;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+      .education {
+        flex: 1;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+        .university {
+          display: flex;
+          margin-top: 20px;
+          flex-direction: row;
+          justify-content: space-between;
+          .detailUni {
+            display: flex;
+            text-align: start;
+            flex-direction: column;
+            h3 {
+              font-size: 22px;
+              line-height: 40px;
+            }
+            p {
+              font-size: 18px;
+              color: black;
+              font-style: normal;
+              line-height: 30px;
+            }
+          }
+
+          p {
+            font-size: 20px;
+            color: #666;
+            line-height: 40px;
+            font-style: italic;
+          }
+        }
+      }
+      .language {
+        flex: 1;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+
+        .both {
+          display: flex;
+          flex-direction: row;
+          margin-top: 20px;
+          .typeSkill {
+            text-align: start;
+            flex: 1;
+            h3 {
+              font-size: 22px;
+              line-height: 40px;
+            }
+            li {
+              list-style-type: none;
+              margin-left: 20px;
+              font-size: 20px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+      .experience {
+        flex: 1;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+        .roles {
+          margin-top: 20px;
+          justify-content: space-between;
+          .detailRole {
+            text-align: start;
+            h3 {
+              font-size: 22px;
+              line-height: 40px;
+            }
+            p {
+              font-style: normal;
+            }
+          }
+          p {
+            font-size: 20px;
+            color: #666;
+            line-height: 40px;
+            font-style: italic;
+          }
+        }
+      }
+      .hobbies {
+        flex: 1;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        ul {
+          text-align: start;
+          margin: 20px 0;
+        }
+        li {
+          list-style-type: none;
+          margin-left: 20px;
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

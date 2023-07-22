@@ -1,0 +1,15 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: pink;
+    border-radius: 5px;
+  }
+}

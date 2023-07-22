@@ -1,0 +1,149 @@
+.container {
+  .img_company {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+  }
+  .job_container {
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    border: solid 2px pink;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 25px;
+  }
+  h1 {
+    font-size: 50px;
+    white-space: nowrap;
+    background-image: linear-gradient(to right top, pink, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .infor_company {
+    .infor {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      margin: auto;
+
+      .box_contact {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        .contact_company {
+          margin-top: 20px;
+          border: solid 2px pink;
+          padding: 20px;
+          border-radius: 20px;
+          height: 200px;
+          li {
+            white-space: nowrap;
+            list-style-type: none;
+            line-height: 40px;
+            font-size: 22px;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  .jobs_company {
+    display: flex;
+    flex-direction: column;
+    .jobs {
+      overflow-y: auto;
+      flex: 1;
+      h2 {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        color: transparent;
+        background-image: linear-gradient(to right top, pink, red);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .job {
+        margin: 22px auto;
+        width: 90%;
+        display: flex;
+        border: solid 1px orange;
+        border-radius: 20px;
+        // overflow-y: ;
+
+        .jd {
+          text-align: start;
+          padding: 20px;
+          flex: 2;
+          h4 {
+            font-size: 30px;
+            color: orange;
+            line-height: 50px;
+          }
+          p {
+            font-size: 22px;
+            line-height: 32px;
+          }
+        }
+        .apply {
+          padding: 20px;
+          flex: 1;
+          button {
+            width: 100%;
+            border-radius: 10px;
+            background-color: orange;
+            border: none;
+
+            h6 {
+              animation: button 1s infinite;
+              font-size: 40px;
+              color: white;
+              font-weight: bold;
+            }
+          }
+          p {
+            text-align: start;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes button {
+    0% {
+      transform: scale(1) rotate(-4deg);
+    }
+    50% {
+      transform: scale(1.1) rotate(4deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    70% {
+      transform: rotate(-4deg);
+    }
+    80% {
+      transform: rotate(0deg);
+    }
+    90% {
+      transform: rotate(4deg);
+    }
+    100% {
+      transform: scale(1.05) rotate(-4deg);
+    }
+  }
+
+  button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
